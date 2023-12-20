@@ -31,3 +31,24 @@ header {
 	width: 100%;
 	padding: 1em;
 }
+
+// Main
+
+main {
+	height: 100%;
+	width: 100%;
+
+	.social-icons {
+		position: fixed;
+		bottom: 1em;
+		left: 1em;
+
+		a {
+			padding: 0.4em;
+
+			&:hover {
+				color: $secondary-color;
+			}
+		}
+	}
+}
