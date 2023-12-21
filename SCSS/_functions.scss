@@ -1,0 +1,11 @@
+@import "./config";
+
+// Functions
+
+@function set-text-color($color) {
+	@if (lightness($color) > 40%) {
+		@return $dark-color;
+	} @else {
+		@return $text-color;
+	}
+}

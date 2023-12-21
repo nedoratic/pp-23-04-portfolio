@@ -2,6 +2,7 @@
 
 @import "./config";
 @import "./mixins";
+@import "./functions";
 @import "./home";
 
 // General
@@ -9,7 +10,7 @@
 body {
 	height: 100vh;
 	background: $primary-color;
-	color: $text-color;
+	color: set-text-color($primary-color);
 	font-family: $primary-font;
 	line-height: 1;
 }
@@ -21,7 +22,7 @@ h3 {
 }
 
 a {
-	color: $text-color;
+	color: set-text-color($primary-color);
 	text-decoration: none;
 }
 
@@ -63,7 +64,7 @@ footer {
 	bottom: 0.4em;
 	right: 1em;
 	padding: 1em;
-	color: $text-color;
+	color: set-text-color($primary-color);
 	font-size: 1em;
 	text-align: right;
 }
