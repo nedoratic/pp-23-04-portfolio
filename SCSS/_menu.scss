@@ -1,5 +1,7 @@
 // Menu
 
+// Menu Icon
+
 .menu-btn {
 	position: absolute;
 	z-index: 1;
@@ -51,5 +53,69 @@
 				transform: rotate(-45deg) translate(3px, -7px);
 			}
 		}
+	}
+}
+
+// Menu Options
+
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	opacity: 0.95;
+	visibility: hidden;
+
+	&.open {
+		visibility: visible;
+	}
+
+	.menu-nav {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		overflow: hidden;
+		background: $primary-color;
+		list-style-type: none;
+		padding-right: 1em;
+		transform: translateY(-100%);
+		@include transition-ease;
+
+		&.open {
+			transform: translateY(0);
+		}
+
+		&__item {
+			transform: translateX(100vw);
+			@include transition-ease;
+
+			&.open {
+				transform: translateX(0);
+			}
+
+			&.active > a {
+				color: $secondary-color;
+			}
+		}
+
+		&__link {
+			display: inline-block;
+			font-size: 2em;
+			padding: 0.5em 0;
+			font-weight: 300;
+			@include transition-ease;
+
+			&:hover {
+				color: $secondary-color;
+			}
+		}
+	}
+}
+
+@for $i from 1 through 4 {
+	.menu-nav__item:nth-child(#{$i}) {
+		transition-delay: ($i * 0.1s) + 0.15s;
 	}
 }
