@@ -1,6 +1,7 @@
 // Imports
 
 @import "./config";
+@import "./mixins";
 @import "./home";
 
 // General
@@ -46,6 +47,7 @@ main {
 
 		a {
 			padding: 0.4em;
+			@include transition-ease;
 
 			&:hover {
 				color: $secondary-color;
