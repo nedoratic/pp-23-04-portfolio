@@ -69,6 +69,16 @@
   background: #f7f7f7;
   transition: all 0.5s ease-in-out;
 }
+.menu-btn__burger.open {
+  transform: rotate(720deg);
+  background: transparent;
+}
+.menu-btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+.menu-btn__burger.open::after {
+  transform: rotate(-45deg) translate(3px, -7px);
+}
 
 body {
   height: 100vh;

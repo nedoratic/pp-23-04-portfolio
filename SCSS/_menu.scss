@@ -38,5 +38,18 @@
 			background: set-text-color($primary-color);
 			@include transition-ease;
 		}
+
+		&.open {
+			transform: rotate(720deg);
+			background: transparent;
+
+			&::before {
+				transform: rotate(45deg) translate(5px, 8px);
+			}
+
+			&::after {
+				transform: rotate(-45deg) translate(3px, -7px);
+			}
+		}
 	}
 }
