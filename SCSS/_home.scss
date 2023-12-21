@@ -1,0 +1,24 @@
+.home {
+	height: 100%;
+	padding-top: 40vh;
+	overflow: hidden;
+	align-items: center;
+	text-align: center;
+	background: linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.3)), url(../img/home.jpg) center top;
+	background-size: cover;
+
+	&__name {
+		font-size: 3em;
+		margin-top: 0.5em;
+		padding-bottom: 0.5em;
+		border-bottom: 2px solid $secondary-color;
+
+		&--full {
+			color: $secondary-color;
+		}
+	}
+
+	&__title {
+		margin-top: 0.5em;
+	}
+}
