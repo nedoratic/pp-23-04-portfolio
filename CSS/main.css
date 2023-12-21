@@ -45,3 +45,13 @@ main .social-icons a {
 main .social-icons a:hover {
   color: #ff652f;
 }
+
+footer {
+  position: fixed;
+  bottom: 0.4em;
+  right: 1em;
+  padding: 1em;
+  color: #f7f7f7;
+  font-size: 1em;
+  text-align: right;
+}
