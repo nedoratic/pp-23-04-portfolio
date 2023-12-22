@@ -144,6 +144,65 @@
   margin-top: 0.5em;
 }
 
+.about__bio {
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/nedo-ratic.jpg) center top;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+.about__bio .text-secondary {
+  margin-bottom: 1em;
+}
+.about__bio p {
+  width: 80%;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.about__certifications, .about__education {
+  width: 60vw;
+  margin: 4em auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+.about__certifications__cert, .about__certifications__uni, .about__education__cert, .about__education__uni {
+  background: #414141;
+  padding: 0.5em;
+  border-bottom: 5px solid #ff652f;
+}
+.about__certifications__cert h2,
+.about__certifications__cert h3,
+.about__certifications__cert h4, .about__certifications__uni h2,
+.about__certifications__uni h3,
+.about__certifications__uni h4, .about__education__cert h2,
+.about__education__cert h3,
+.about__education__cert h4, .about__education__uni h2,
+.about__education__uni h3,
+.about__education__uni h4 {
+  margin: 0.5em 0;
+}
+.about__certifications__cert p, .about__certifications__uni p, .about__education__cert p, .about__education__uni p {
+  margin: 0.3em 0;
+}
+.about__certifications__uni:last-child, .about__education__uni:last-child {
+  margin-bottom: 5em;
+}
+
+.about__certification__cert__link,
+.about__education__uni__link {
+  transition: all 0.5s ease-in-out;
+}
+.about__certification__cert__link:hover,
+.about__education__uni__link:hover {
+  color: #ff652f;
+}
+
 body {
   height: 100vh;
   background: #272727;

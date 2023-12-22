@@ -1,0 +1,65 @@
+// About
+
+.about {
+	&__bio {
+		background: linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.3)), url(../img/nedo-ratic.jpg) center top;
+		background-size: cover;
+		min-height: 100vh;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		margin: 0 auto;
+		padding-bottom: 2em;
+
+		.text-secondary {
+			margin-bottom: 1em;
+		}
+
+		p {
+			width: 80%;
+			margin-bottom: 2em;
+			text-align: center;
+		}
+	}
+
+	&__certifications,
+	&__education {
+		width: 60vw;
+		margin: 4em auto 0 auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 2em;
+
+		&__cert,
+		&__uni {
+			background: lighten($primary-color, 10%);
+			padding: 0.5em;
+			border-bottom: 5px solid $secondary-color;
+
+			h2,
+			h3,
+			h4 {
+				margin: 0.5em 0;
+			}
+
+			p {
+				margin: 0.3em 0;
+			}
+		}
+
+		&__uni:last-child {
+			margin-bottom: 5em;
+		}
+	}
+}
+
+.about__certification__cert__link,
+.about__education__uni__link {
+	@include transition-ease;
+
+	&:hover {
+		color: $secondary-color;
+	}
+}
