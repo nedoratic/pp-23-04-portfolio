@@ -277,6 +277,9 @@
 .projects__item:hover .projects__btn {
   opacity: 1;
 }
+.projects__item:last-child {
+  margin-bottom: 5em;
+}
 .projects__btns {
   position: absolute;
   top: 0;

@@ -64,6 +64,10 @@
 				opacity: 1;
 			}
 		}
+
+		&:last-child {
+			margin-bottom: 5em;
+		}
 	}
 
 	&__btns {
