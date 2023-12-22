@@ -66,6 +66,14 @@
 	}
 }
 
+@media (min-width: 830px) {
+	.about {
+		&__bio {
+			min-height: calc(100vw * 1);
+		}
+	}
+}
+
 @media (max-width: 768px) {
 	.about-page {
 		.about {

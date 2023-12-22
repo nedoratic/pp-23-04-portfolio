@@ -205,6 +205,11 @@
   color: #ff652f;
 }
 
+@media (min-width: 830px) {
+  .about__bio {
+    min-height: 100vw;
+  }
+}
 @media (max-width: 768px) {
   .about-page .about__bio p {
     width: 60%;
