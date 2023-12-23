@@ -312,6 +312,41 @@
     display: none;
   }
 }
+.contact {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/home.jpg) center top;
+  background-size: cover;
+  border-bottom: 2px solid #ff652f;
+}
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 2rem;
+}
+.contact__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+  text-align: center;
+  line-height: 1.6em;
+}
+.contact .social-icons {
+  position: initial;
+  margin-top: 2em;
+}
+
+.contact-page footer {
+  position: fixed;
+  text-align: center;
+  right: 30%;
+  left: 30%;
+}
+
 body {
   height: 100vh;
   background: #272727;
