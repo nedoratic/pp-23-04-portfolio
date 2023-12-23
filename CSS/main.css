@@ -143,6 +143,11 @@
 .home__title {
   margin-top: 0.5em;
 }
+.home__skills img {
+  width: 26px;
+  margin-top: 0.4em;
+  padding: 0.2em;
+}
 
 .about__bio {
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/nedo-ratic.jpg) center top;
