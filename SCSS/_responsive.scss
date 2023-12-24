@@ -1,0 +1,28 @@
+@import "./mixins";
+
+@include media-md {
+	.projects {
+		&__items {
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 2em;
+		}
+	}
+}
+
+@include media-lg {
+	.projects {
+		&__items {
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 3em;
+		}
+	}
+}
+
+@include media-xl {
+	.projects {
+		&__items {
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 3em;
+		}
+	}
+}
