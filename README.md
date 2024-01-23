@@ -1,11 +1,13 @@
-# pp-23-04-portfolio
+# Practice Project - 2023 - 04 - Portfolio
 
-## Practice Project - 2023 - 04 - Portfolio
+## Tools and Tech
 
-### Tools and Tech:
+• Terminal • Git • GitHub • VSC • HTML • CSS • SASS • JavaScript
 
-CLI, Terminal, Zsh, Version Control, Git, GitHub, VS Code, HTML, CSS, SASS, JS
+## Approach and Methodology
 
-### Approach and Methodology
+• Desktop First Design • Responsive Web Design • Block Element Modifier
 
-Mobile First, Responsive Web Design, BEM (Block Element Modifier)
+## Live Preview
+
+[Homepage](https://nedoratic.github.io/pp-23-04-portfolio/)
